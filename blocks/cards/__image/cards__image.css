@@ -1,3 +1,7 @@
+/**
+	Можно лучше:
+	-- border-radius лучше указать 50%
+*/
 .cards__image {
 	border-radius: 80px;
 	width: 160px;

@@ -4,40 +4,109 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Яндекс Практикум</title>
+	<!-- Надо исправить: 
+		--в данной работе не используем reset.css, используем normalize.css
+		--на странице подлкючается только соответствующий файл из папки pages, все остальное импортируется в него
+	-->
 	<link rel="stylesheet" href="./vendor/reset.css">
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
 	<div class="page">
+		<!-- Надо исправить: данная обертка лишняя -->
 		<div class="blocks">
 			<header class="header">
+				<!-- Можно лучше:  лого в шапке принятно делать ссылкой -->
+				<!--
+					Надо исправить:
+					- Текст в alt называется альтернативным описанием изображения и рассказывает словами, что изображено. Это полезно, если картинка не загрузилась или пользователь не видит изображения.
+					https://doka.guide/html/img/
+				-->
 				<img alt="logo" class="logo logo_place_header" src="./img/logo_place_header.svg">
 				<h1 class="header__title">Научиться учиться</h1>
+				<!--
+					Надо исправить:
+					-- внешний вид ссылки отличается от брифа
+					-- не хватает стрелки у ссылки (хороший тон - использовать мнемоники html)
+					-- в соответствии с брифом у ссылки должен быть другой класс
+				-->
 				<p class="header__subtitle">Какие современные подходы к обучению вы можете использовать в своей жизни? <a href="#" class="header__subtitle-link">Узнать</a></p>
+				<!--
+					Надо исправить:
+					- Текст в alt называется альтернативным описанием изображения и рассказывает словами, что изображено. Это полезно, если картинка не загрузилась или пользователь не видит изображения.
+					https://doka.guide/html/img/
+				-->
 				<img class="header__main-illustration" alt="main-illustration" src="./img/two_again.png">
 				<div class="header__square-pic rotation"></div>
 			</header>
+		
+		<!--
+			Надо исправить:
+			-- здесь нужно использовать тег main
+			-- в него должны входить все секции
+		-->
 		<div class="content">
 			<section class="description">
+				<!--
+					Можно лучше - здесь больше подойдет тег article
+					https://doka.guide/html/article/
+				-->
 				<div class="two-columns">
+					<!--
+						Надо исправить 
+						-- данная обертка лишняя
+						-- внешний вид заголовка не соответствует брифу
+						-- здесь для секции нужно использовать заголовок h2
+						https://doka.guide/html/h1-h6/
+					-->
 					<div class="two-columns__brief">
 						<h4 class="two-columns__title">Главные проблемы обучения</h4>
 					</div>
 					<div class="two-columns__main-text">
+						<!--
+							Можно лучше:
+							-- для отступов лучше использовать margin
+						-->
 						<p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка бысто выветривается и не приносит пользы.</p>
+						<!--
+							Надо исправить:
+							- для span нужно задать класс в соответствии с брифом
+						-->
 						<p class="two-columns__paragraph"><span class="two-columns__paragraph_bold">Вывод:</span> учиться тоже нужно уметь, но почему-то мало где этому учат. Что с этим делать?</p>
 						<p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обученя в Практикуме.</p>
 					</div>
 				</div>
 			</section>
 			<section class="techniques">
+				<!--
+					Можно лучше:
+					- лучше убрать верхний внутренний отступ у заголовок и задать его секции (отностится ко всем подобным случаям)
+				-->
 				<h2 class="section-title">Техники обучения</h2>
+				<!-- Надо исправить - уровень заголовка должен быть выше, чем в карточках -->
 				<h5 class="section-subtitle">Пять практик от Барбары Оакли</h5>
+				<!--
+					Надо исправить:
+					-- видимо опечатка, лишний закрывающий div
+				-->
 				</div>
+				<!--
+					Можно лучше - здесь больше подойдет тег ul
+					https://doka.guide/html/ul/
+				-->
 				<div class="cards">
 					<div class="cards__item">
+						<!--
+							Надо исправить:
+							- Текст в alt называется альтернативным описанием изображения и рассказывает словами, что изображено. Это полезно, если картинка не загрузилась или пользователь не видит изображения (относится ко всем карточкам)
+							https://doka.guide/html/img/ 
+						-->
 						<img class="cards__image" src="./img/cards-attention.png" alt="card1">
 						<h4 class="cards__title">Два вида внимания</h4>
+						<!-- надо исправить (для всех карточек)
+							- класс назван с опечаткой 
+							- внешний вид текста не соответствует брифу
+						-->
 						<p class="cards__discription">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
 					</div>
 					<div class="cards__item">
@@ -65,13 +134,32 @@
 			<section class="video">
 				<h2 class="section-title">Видео на TED</h2>
 				<h5 class="section-subtitle">Для тех, кто любит прокастинировать</h5>
+				<!--
+					Можно лучше - здесь больше подойдет тег ul
+					https://doka.guide/html/ul/
+				-->
 				<div class="video__iframes">
+					<!--
+						Надо исправить:
+						-- видео не подгружается, т.к. ссылка в src должна быть вида https://www.youtube.com/embed/{id}
+					-->
 					<iframe class="video__iframe" src="https://www.youtube.com/watch?v=arj7oStGLkU"></iframe>
 					<iframe class="video__iframe" src="https://www.youtube.com/watch?v=arj7oStGLkU"></iframe>
 				</div>
 			</section>
 			<section class="oakley">
+				<!--
+					Можно лучше - здесь больше подойдет тег article
+					https://doka.guide/html/article/
+				-->
 				<div class="two-columns">
+					<!--
+						Надо исправить 
+						-- данная обертка лишняя
+						-- внешний вид заголовка не соответствует брифу
+						-- здесь для секции нужно использовать заголовок h2
+						https://doka.guide/html/h1-h6/
+					-->
 					<div class="two-columns__brief">
 						<h4 class="two-columns__title">История Барбары Оакли.</h4>
 					</div>
@@ -83,11 +171,19 @@
 			<section class="feynman">
 				<h2 class="feynman__title">Метод Фейнмана</h2>
 					<h4 class="feynman__subtitle">Выучить и не забыть</h4>
+					<!--
+					Надо исправить:
+					-- не хватает стрелки у ссылки (хороший тон - использовать мнемоники html)
+				-->
 					<a class="feynman__link" href="#">Подробнее</a>
 			</section>
 			<section class="digits">
 				<h2 class="section-title">Цифры и факты</h2>
 				<h5 class="section-subtitle">Про учебу и мозг</h5>
+				<!--
+					Можно лучше - здесь больше подойдет тег ul
+					https://doka.guide/html/ul/
+				-->
 				<div class="table">
 					<div class="table__cell">
 						<p class="table__heading">86 миллиардов</p>
@@ -127,22 +223,59 @@
 			</section>
 			<section class="khan">
 				<div class="khan__blocks">
+					<!--
+						надо исправить - здесь нужно использовать тег <p>
+					-->
 					<h3 class="knan__author">Салман Хан</h3>
+					<!-- надо исправить - опечатка в свойстве жирности текста -->
 					<h2 class="khan__title">Весь мир — школа</h2>
+					<!-- надо исправить - здесь цитата, нужно использовать тег blockquote
+					https://doka.guide/html/blockquote/
+					-->
 					<p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
 					<h6 class="khan__quote-author">Джордж Лукас</h6>
 					<p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
 					<div class="khan__book-container">
+						<!-- 
+							Надо исправить - изображение "Поехало", используй object-fit и object-position
+							https://doka.guide/css/object-fit/
+							https://doka.guide/css/object-position/
+						-->
 						<img class="khan__book-pic" alt="book" src="./img/khan-book.jpg">
 						<a href="#" class="khan__buy-link">Купить книгу </a>
 					</div>
 				</div>
 			</section>
 			<section class="kaufman">
+				<!--
+					Надо исправить:
+					​​-- Здесь нужно вывести изображение через background-image для kaufman__triangle. Картинки несущие смысловую нагрузку или же каким-либо образом относящиеся к содержанию страницы следует вставлять тегом img (картинки в тексте, баннеры, картинки слайдера, аватарки и тд). Все остальное (просто элементы оформления: различного рода разделители, маркеры, фоны и тд.) следует вставлять в дизайн используя background-image.
+					-- изображение нужно подключать из папки img, которая находится в каталоге проекта, т.е. необходимо использовать ../ Сейчас изображение подключается из корня проекта, т.е. если проект будет запущен вложенно, то файл не будет найден (https://skr.sh/sF22zqQ7v35)
+				-->
 				<img class="kaufman__triangle rotation" alt="triangle" src="/img/kaufman-triangle.svg">
+				<!--
+					Надо исправить:
+					-- здесь необходимо использовать блок section-title с модификатором _theme_dark
+				-->
 				<h2 class="kaufman__title">Принципы обучения</h2>
+				<!--
+					Надо исправить:
+					-- здесь необходимо использовать блок section-subtitle с модификатором _theme_dark
+				-->
 				<h5 class="kaufman__subtitle">от Джоша Кауфмана</h5>
+				<!--
+					Можно лучше - здесь больше подойдет тег ul
+					https://doka.guide/html/ul/
+				-->
 				<div class="table table_theme_dark">
+					<!--
+						Надо исправить (относится ко всем ячейкам):
+						-- БЭМ сущность содержит в себе только модификатор. 
+						Класс представлен одним модификатором, образованным от элемента. 
+						Пример работы с модификаторами: class='block block_mod block_mod_mod-value', где block - блок или элемент (block__element-name_mod). _mod - модификатор блока _mod_mod-value - сложный модификатор, где _mod-value - значение сложного модификатора. 
+						Сейчас нет блока от которого можно было бы использовать модификатор. 
+						Документация по БЭМ: https://tech.yandex.ru/bem/
+					-->
 					<div class="table__cell_theme_dark">
 						<p class="table__heading">1</p>
 						<p class="table__text">Выберите привлекательный проект.</p>
@@ -188,7 +321,16 @@
 			<section class="resources">
 				<h2 class="section-title">Полезные ресурсы</h2>
 				<h5 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h5>
+				<!--
+					Можно лучше - здесь больше подойдет тег ul
+					https://doka.guide/html/ul/
+				-->
 				<div class="resources__logo-zone">
+					<!--
+						Надо исправить (для всех картинок в ссылках):
+						- Текст в alt называется альтернативным описанием изображения и рассказывает словами, что изображено. Это полезно, если картинка не загрузилась или пользователь не видит изображения.
+						https://doka.guide/html/img/
+					-->
 					<a href="#" class="resources__logo"><img class="resources__logo-img" alt="arzamas" src="./img/logo/resources-arzamas.svg"></a>
 					<a href="#" class="resources__logo"><img class="resources__logo-img" alt="n1" src="./img/logo/resources-n1.svg"></a>
 					<a href="#" class="resources__logo"><img class="resources__logo-img" alt="strelka" src="./img/logo/resources-strelka.svg"></a>
@@ -197,21 +339,63 @@
 			</section>
 			<footer class="footer">
 				<div class="footer__columns">
+					<!--
+						Надо исправить (относится ко всем ячейкам):
+						-- БЭМ сущность содержит в себе только модификатор. 
+						Класс представлен одним модификатором, образованным от элемента. 
+						Пример работы с модификаторами: class='block block_mod block_mod_mod-value', где block - блок или элемент (block__element-name_mod). _mod - модификатор блока _mod_mod-value - сложный модификатор, где _mod-value - значение сложного модификатора. 
+						Сейчас нет блока от которого можно было бы использовать модификатор. 
+						Документация по БЭМ: https://tech.yandex.ru/bem/
+
+						-- класс у колонки должен сооветствовать брифу
+					-->
 					<div class="footer__columns_content_copyright">
+						<!--
+							Надо исправить:
+							-- Структура полного имени модификатора  ключ-значение соответствует схеме:
+							-- имя-блока_имя-модификатора_значение-модификатора
+							-- имя-блока__имя-элемента_имя-модификатора_значение-модификатора
+							https://ru.bem.info/methodology/quick-start/#%D0%BC%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80
+						-->
 						<img class="logo logo__place_footer" alt="logo" src="./img/logo_place_footer.svg">
+						<!--
+							Надо исправить:
+							-- Html-мнемоники должны заканчиваться точкой с запятой, т.е. &copy;
+						-->
 						<p class="footer__author">&copy Казаков Денис</p>
 					</div>
+					<!--
+						Надо исправить:
+						-- здесь больше подходит тег nav
+						https://doka.guide/html/nav/
+					-->
 					<div class="footer__columns-content-info">
 						<h6 class="footer__column-heading">О Практикуме</h6>
 						<ul class="footer__column-links">
+							<!--
+								Надо исправить:
+								-- здесь должны быть ссылки, 
+								-- класс footer__column-link необходимо задать тегу a
+							-->
 							<li class="footer__column-link">Главная</li>
 							<li class="footer__column-link">Концепция</li>
 							<li class="footer__column-link">Наставники</li>
 						</ul>
 					</div>
+					<!--
+						Надо исправить:
+						-- здесь больше подходит тег nav
+						https://doka.guide/html/nav/
+					-->
 					<div class="footer__columns_content_social">
 						<h6 class="footer__column-heading">Соцсести</h6>
 						<ul class="footer__column-links">
+							<!--
+								Надо исправить:
+								-- класс footer__column-link необходимо задать тегу a
+								-- Текст в alt называется альтернативным описанием изображения и рассказывает словами, что изображено. Это полезно, если картинка не загрузилась или пользователь не видит изображения.
+								https://doka.guide/html/img/
+							-->
 							<li class="footer__column-link"><a href="#"><img class="footer__social-icon" src="./img/facebook_color_white.svg">Facebook</a></li>
 							<li class="footer__column-link"><a href="#"><img class="footer__social-icon" src="./img/vk_color_white.svg">Вконтакте</a></li>
 							<li class="footer__column-link"><a href="#"><img class="footer__social-icon" src="./img/instagram_color_white.svg">Instagram</a></li>
