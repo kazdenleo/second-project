@@ -1,8 +1,5 @@
-/**
-    Можно лучше:
-    -- для отступов между ячейками лучше использовать margin
-*/
 .table__cell {
     width: 250px;
-    padding-top: 60px;
+    margin-top: 60px;
+    list-style: none;
 }

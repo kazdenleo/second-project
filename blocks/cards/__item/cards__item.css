@@ -2,6 +2,7 @@
 	width: 240px;
 	padding: 60px 100px 0px 0px;
 	text-align: center;
+	list-style: none;
 }
 
 .cards__item:nth-child(3n) {
