@@ -1,15 +1,5 @@
 .footer__column-links {
     padding: 20px 0 18px;
-}
-
-/**
-    Надо исправить:
-    -- не нужно использовать вложенность, тегу a нужно назначить класс
-*/
-.footer__column-links a {
     color: #fff;
-}
-
-.footer__column-links a:visited {
-    color: #fff;
+    list-style: none;
 }
