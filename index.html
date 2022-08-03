@@ -7,28 +7,11 @@
   	<link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
-	<!--
-		Надо исправить:
-		-- тег не закрыт
-	-->
 	<div class="page">
 			<header class="header">
-				<!--
-					Надо исправить:
-					- абсолютное позиционирование задано для logo, т.е. ссылка выпала, лучше задать класс logo и его модификаторы ссылке, а изображение сделать элементом блока logo
-				-->
-				<a class="logolink" href="#"><img alt="Логотип Яндекс.Практикум" class="logo logo_place_header" src="./img/logo_place_header.svg"></a>
-				<!--
-					Надо исправить:
-					-- нужно обнулить стандартные margin-top и margin-bottom у заголовка
-				-->
+				<a class="logo logo_place_header" href="#"><img alt="Логотип Яндекс.Практикум" class="logo__img" src="./img/logo_place_header.svg"></a>
 				<h1 class="header__title">Научиться учиться</h1>
-				<!--
-					Надо исправить:
-					-- текст не полностью скопирован из брифа, из-за этого стрелка уезжает от ссылки 
-					https://skr.sh/sFBb1spGyU2
-				-->
-				<p class="header__subtitle">Какие современные подходы к обучению вы можете использовать в своей жизни? <a href="#" class="header__link">Узнать &rarr;</a></p>
+				<p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="#" class="header__link">Узнать &rarr;</a></p>
 				<img class="header__main-illustration" alt="Изображение картины 'Опять двойка'" src="./img/two_again.png">
 				<div class="header__square-pic rotation"></div>
 			</header>
@@ -90,10 +73,6 @@
 					</div>
 				</article>
 			</section>
-			<!--
-				Надо исправить:
-				-- блок не нужно ограничивать по высоте, нужно использовать min-height
-			-->
 			<section class="feynman">
 				<h2 class="feynman__title">Метод Фейнмана</h2>
 					<h4 class="feynman__subtitle">Выучить и не забыть</h4>
@@ -141,22 +120,14 @@
 			</section>
 			<section class="khan">
 				<div class="khan__blocks">
-					<!--
-						Надо исправить:
-						-- нужно обнулить стандартные margin-top и margin-bottom у подзаголовка
-					-->
 					<p class="knan__author">Салман Хан</p>
-					<!--
-						Надо исправить:
-						-- здесь заголовок, нужно использовать теги h1-h6, тег цитаты нужно использовать ниже
-					-->
-					<blockquote class="khan__title">Весь мир — школа</blockquote>
-					<p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+					<h4 class="khan__title">Весь мир — школа</h4>
+					<blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
 					<h6 class="khan__quote-author">Джордж Лукас</h6>
 					<p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
 					<div class="khan__book-container">
 						<img class="khan__book-pic" alt="book" src="./img/khan-book.jpg">
-						<a href="#" class="khan__buy-link">Купить книгу &rarr;</a>
+						<div class="khan__buy-linkbock"><a href="#" class="khan__buy-link">Купить книгу &rarr;</a></div>
 					</div>
 				</div>
 			</section>
@@ -164,11 +135,6 @@
 				<div class="kaufman__triangle rotation"></div>
 				<h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
 				<h5 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h5>
-				<!--
-					Надо исправить:
-					-- итоговый отступ не соответвует брифу
-					https://skr.sh/sFBwShbqoAp
-				-->
 				<ul class="table table_theme_dark">
 					<li class="table__cell table__cell_theme_dark">
 						<p class="table__heading table__heading_theme_dark">1</p>
@@ -222,53 +188,31 @@
 					<li class="resources__logo-block"><a href="#" class="resources__logo"><img class="resources__logo-img" alt="Логотип Polka" src="./img/logo/resources-polka.svg"></a></li>
 				</ul>
 			</section>
-			<footer class="footer">
-				<!--
-					Надо исправить:
-					-- цвет ссылок не соответствует брифу
-					https://skr.sh/sFBLgB6HXSI
-				-->
-				<div class="footer__columns">
-					<div class="footer__column footer__column_content_copyright">
-						<a class="logolink" href="#"><img alt="Логотип Яндекс.Практикум" class="logo logo__place_footer" src="./img/logo_place_footer.svg"></a>
-						<!--
-							Надо исправить:
-							-- нужно обнулить стандарьные margin
-						-->
-						<p class="footer__author">&copy; Казаков Денис</p>
-					</div>
-					<nav class="footer__column footer__column_content_info">
-						<h6 class="footer__column-heading">О Практикуме</h6>
-						<!--
-							Надо исправить:
-							-- нужно обнулить стандарьные margin
-							-- модификатор для списка здесь не нужен
-						-->
-						<ul class="footer__column-links footer__column-links_visited">
-							<li class="footer__columns-item"><a href="#" class="footer__column-link">Главная</a></li>
-							<li class="footer__columns-item"><a href="#" class="footer__column-link">Концепция</a></li>
-							<li class="footer__columns-item"><a href="#" class="footer__column-link">Наставники</a></li>
-						</ul>
-					</nav>
-					<nav class="footer__column footer__column_content_social">
-						<h6 class="footer__column-heading">Соцсести</h6>
-						<!--
-							Надо исправить:
-							-- нужно обнулить стандарьные margin
-							-- модификатор для списка здесь не нужен
-						-->
-						<ul class="footer__column-links footer__column-links_visited">
-							<li class="footer__columns-item"><a class="footer__column-link" href="#"><img alt="Facebook" class="footer__social-icon" src="./img/facebook_color_white.svg">Facebook</a></li>
-							<li class="footer__columns-item"><a class="footer__column-link" href="#"><img alt="Вконтакте" class="footer__social-icon" src="./img/vk_color_white.svg">Вконтакте</a></li>
-							<li class="footer__columns-item"><a class="footer__column-link" href="#"><img alt="Instagram" class="footer__social-icon" src="./img/instagram_color_white.svg">Instagram</a></li>
-						</ul>
-					</nav>
-				</div>
-			</footer>
-		<!--
-			Надо исправить:
-			-- footer не должен входить в main, т.к. на других страницах чаще всего он повторяется
-		-->
 		</main>
+		<footer class="footer">
+			<div class="footer__columns">
+				<div class="footer__column footer__column_content_copyright">
+					<a class="logolink" href="#"><img alt="Логотип Яндекс.Практикум" class="logo logo__place_footer" src="./img/logo_place_footer.svg"></a>
+					<p class="footer__author">&copy; Казаков Денис</p>
+				</div>
+				<nav class="footer__column footer__column_content_info">
+					<h6 class="footer__column-heading">О Практикуме</h6>
+					<ul class="footer__column-links">
+						<li class="footer__columns-item"><a href="#" class="footer__column-link">Главная</a></li>
+						<li class="footer__columns-item"><a href="#" class="footer__column-link">Концепция</a></li>
+						<li class="footer__columns-item"><a href="#" class="footer__column-link">Наставники</a></li>
+					</ul>
+				</nav>
+				<nav class="footer__column footer__column_content_social">
+					<h6 class="footer__column-heading">Соцсести</h6>
+					<ul class="footer__column-links">
+						<li class="footer__columns-item"><a class="footer__column-link" href="#"><img alt="Facebook" class="footer__social-icon" src="./img/facebook_color_white.svg">Facebook</a></li>
+						<li class="footer__columns-item"><a class="footer__column-link" href="#"><img alt="Вконтакте" class="footer__social-icon" src="./img/vk_color_white.svg">Вконтакте</a></li>
+						<li class="footer__columns-item"><a class="footer__column-link" href="#"><img alt="Instagram" class="footer__social-icon" src="./img/instagram_color_white.svg">Instagram</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

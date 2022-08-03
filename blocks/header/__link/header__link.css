@@ -4,5 +4,12 @@
     font-weight: 400;
     text-decoration: none;
     color: #2f80ed;
+    padding: 3px 5px;
+    transition: background-color .7s, color .6s;
 }
-	
+
+.header__link:hover {
+    opacity: 0.7;
+    background-color: #2f80ed;
+    color: #fff;
+}

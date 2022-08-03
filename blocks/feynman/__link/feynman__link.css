@@ -7,4 +7,12 @@
     top: 50%;
     text-decoration: none;
     color: #2f80ed;
+    padding: 0 10px;
+    transition: background-color .7s, color .6s;
+}
+
+.feynman__link:hover {
+    opacity: 0.7;
+    background-color: #2f80ed;
+    color: #fff;
 }
